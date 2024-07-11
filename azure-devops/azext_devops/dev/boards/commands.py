@@ -7,6 +7,7 @@
 from azure.cli.core.commands import CliCommandType
 from azext_devops.dev.common.exception_handler import azure_devops_exception_handler
 from ._format import (transform_work_item_table_output,
+                      transform_work_item_artifact_link_type_table_output,
                       transform_work_item_query_result_table_output,
                       transform_work_item_relation_type_table_output,
                       transform_work_item_relations,
@@ -57,6 +58,8 @@ def load_work_commands(self, _):
         # relation commands
         g.command('relation list-type', 'get_relation_types_show',
                   table_transformer=transform_work_item_relation_type_table_output)
+        g.command('relation list-artifact-link-type', 'get_artifact_link_types_show',
+                  table_transformer=transform_work_item_artifact_link_type_table_output)
         g.command('relation add', 'add_relation', table_transformer=transform_work_item_relations)
         g.command('relation remove', 'remove_relation', table_transformer=transform_work_item_relations,
                   confirmation='Are you sure you want to remove this relation(s)?')

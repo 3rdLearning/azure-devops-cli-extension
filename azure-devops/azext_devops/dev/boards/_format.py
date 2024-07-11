@@ -22,6 +22,16 @@ def transform_work_item_relation_type_table_output(result):
 
     return table_output
 
+def transform_work_item_artifact_link_type_table_output(result):
+    table_output = []
+    for item in result:
+        table_row = OrderedDict()
+        table_row['LinkType'] = item['linkType']
+        table_row['ArtifactType'] = item['artifactType']
+        table_row['ToolType'] = item['toolType']
+        table_output.append(table_row)
+
+    return table_output
 
 def transform_work_item_relations(result):
     if result['relations'] is None:
@@ -33,6 +43,9 @@ def transform_work_item_relations(result):
         table_row = OrderedDict()
         table_row['Relation Type'] = item['rel']
         table_row['Url'] = item['url']
+        table_row['Artifact Link Type'] = item['attributes']['linkType']
+        table_row['Artifact Type'] = item['attributes']['artifactType']
+        table_row['Artifact Tool Type'] = item['attributes']['toolType']
         table_output.append(table_row)
 
     return table_output
