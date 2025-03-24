@@ -5,7 +5,8 @@
 
 from knack.log import get_logger
 from knack.util import CLIError
-from azext_devops.devops_sdk.v5_0.work_item_tracking.models import JsonPatchOperation, Wiql, WorkItemRelation, WorkItemRelationType
+from azext_devops.devops_sdk.v5_0.work_item_tracking.models import (JsonPatchOperation, Wiql, 
+                                                                    WorkItemRelation, WorkItemRelationType
 
 from azext_devops.dev.common.services import (get_work_item_tracking_client,
                                               resolve_instance)
@@ -27,7 +28,8 @@ def get_artifact_link_types_show(organization=None, detect=None):
     client = get_work_item_tracking_client(organization)
     return client.get_work_artifact_link_types()
 
-def add_relation(id, relation_type, target_id=None, target_url=None, artifact_link_type=None, organization=None, detect=None):  # pylint: disable=redefined-builtin
+def add_relation(id, relation_type, target_id=None, target_url=None, artifact_link_type=None
+                 , organization=None, detect=None):  # pylint: disable=redefined-builtin
     """ Add relation(s) to work item.
     """
 
@@ -61,14 +63,16 @@ def add_relation(id, relation_type, target_id=None, target_url=None, artifact_li
             raise CLIError('Id(s) supplied in --target-id is not valid')
 
         for target_work_item in target_work_items:
-            op = _create_patch_operation('add', '/relations/-', relation_type_system_name, target_work_item.url, artifact_link_type_system_name)
+            op = _create_patch_operation('add', '/relations/-', relation_type_system_name, target_work_item.url
+                                         , artifact_link_type_system_name)
             patch_document.append(op)
 
     if target_url is not None:
         target_urls = target_url.split(',')
 
         for url in target_urls:
-            op = _create_patch_operation('add', '/relations/-', relation_type_system_name, url, artifact_link_type_system_name)
+            op = _create_patch_operation('add', '/relations/-', relation_type_system_name, url,
+                                         artifact_link_type_system_name)
             patch_document.append(op)
 
     client.update_work_item(document=patch_document, id=id)
@@ -151,8 +155,8 @@ def get_system_artifact_link_name(artifact_link_types_from_service, artifact_lin
             if artifact_link_type_from_service.link_type.lower() == artifact_link_type.lower():
                 return artifact_link_type_from_service.link_type
 
-        raise CLIError("--artifact-link-type is not valid. Use \"az boards work-item relation list-artifact-link-type\" " +
-                       "command to list possible artifact link types in your project")
+        raise CLIError("--artifact-link-type is not valid. Use \"az boards work-item relation " +
+                       "list-artifact-link-type\" command to list possible artifact link types in your project")
     return None
 def _create_patch_operation(op, path, rel=None, url=None, artifact_link_type=None):
     patch_operation = JsonPatchOperation()
