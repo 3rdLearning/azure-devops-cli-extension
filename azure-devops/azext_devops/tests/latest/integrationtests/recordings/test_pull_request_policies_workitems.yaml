@@ -1,0 +1,86 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json;api-version=5.0
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      User-Agent:
+      - python/3.12.8 (Linux-6.8.0-1017-azure-x86_64-with-glibc2.39) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.2
+      X-TFS-FedAuthRedirect:
+      - Suppress
+      X-TFS-Session:
+      - ad3174f2-944f-4bf0-ba38-c46df780a74e
+      X-VSS-ForceMsaPassThrough:
+      - 'true'
+    method: GET
+    uri: https://dev.azure.com/v-anvashist0376/PullRequestLiveTest/_apis/git/repositories/PullRequestLiveTest/pullRequests?searchCriteria.includeLinks=False
+  response:
+    body:
+      string: '{"value":[{"repository":{"id":"e55c17e3-5cd3-48d5-b7da-007e17f06389","name":"PullRequestLiveTest","url":"https://dev.azure.com/v-anvashist0376/b810b0b0-a954-403b-9795-f0c9d0c9cfe9/_apis/git/repositories/e55c17e3-5cd3-48d5-b7da-007e17f06389","project":{"id":"b810b0b0-a954-403b-9795-f0c9d0c9cfe9","name":"PullRequestLiveTest","state":"unchanged","visibility":"unchanged","lastUpdateTime":"0001-01-01T00:00:00"}},"pullRequestId":46,"codeReviewId":46,"status":"active","createdBy":{"displayName":"Soujanya
+        Bestala (MINDTREE LIMITED)","url":"https://spsprodcin2.vssps.visualstudio.com/Aa9bae0de-049f-43b5-a1ff-18f8f805fbe8/_apis/Identities/22157d54-1821-6536-a446-928b06348385","_links":{"avatar":{"href":"https://dev.azure.com/v-anvashist0376/_apis/GraphProfile/MemberAvatars/aad.MjIxNTdkNTQtMTgyMS03NTM2LWE0NDYtOTI4YjA2MzQ4Mzg1"}},"id":"22157d54-1821-6536-a446-928b06348385","uniqueName":"v-sbestala@microsoft.com","imageUrl":"https://dev.azure.com/v-anvashist0376/_api/_common/identityImage?id=22157d54-1821-6536-a446-928b06348385","descriptor":"aad.MjIxNTdkNTQtMTgyMS03NTM2LWE0NDYtOTI4YjA2MzQ4Mzg1"},"creationDate":"2025-01-07T10:23:01.5604878Z","title":"Updated
+        README.md","description":"Updated README.md\n\n----\n#### AI description  (iteration
+        1)\n#### PR Classification\nDocumentation update\n\n#### PR Summary\nMinor
+        update to the `README.md` file to clarify the description of software dependencies.\n-
+        `README.md`: Changed \"Software dependencies\" to \"Software dependencies
+        test\" in the Getting Started section.","sourceRefName":"refs/heads/test","targetRefName":"refs/heads/main","mergeStatus":"succeeded","isDraft":false,"mergeId":"1021cae1-2cf1-4b62-96bd-bbd49fba68b4","lastMergeSourceCommit":{"commitId":"9fc126f3f87d3d0f4d89a0f85f868c843148d1c6","url":"https://dev.azure.com/v-anvashist0376/b810b0b0-a954-403b-9795-f0c9d0c9cfe9/_apis/git/repositories/e55c17e3-5cd3-48d5-b7da-007e17f06389/commits/9fc126f3f87d3d0f4d89a0f85f868c843148d1c6"},"lastMergeTargetCommit":{"commitId":"16fe2ed3b187501cc3ad0e6081c878c77ba878c0","url":"https://dev.azure.com/v-anvashist0376/b810b0b0-a954-403b-9795-f0c9d0c9cfe9/_apis/git/repositories/e55c17e3-5cd3-48d5-b7da-007e17f06389/commits/16fe2ed3b187501cc3ad0e6081c878c77ba878c0"},"lastMergeCommit":{"commitId":"9272354cf94cfa29beac76f48e03b4c72e99c6ac","url":"https://dev.azure.com/v-anvashist0376/b810b0b0-a954-403b-9795-f0c9d0c9cfe9/_apis/git/repositories/e55c17e3-5cd3-48d5-b7da-007e17f06389/commits/9272354cf94cfa29beac76f48e03b4c72e99c6ac"},"reviewers":[],"url":"https://dev.azure.com/v-anvashist0376/b810b0b0-a954-403b-9795-f0c9d0c9cfe9/_apis/git/repositories/e55c17e3-5cd3-48d5-b7da-007e17f06389/pullRequests/46","supportsIterations":true},{"repository":{"id":"e55c17e3-5cd3-48d5-b7da-007e17f06389","name":"PullRequestLiveTest","url":"https://dev.azure.com/v-anvashist0376/b810b0b0-a954-403b-9795-f0c9d0c9cfe9/_apis/git/repositories/e55c17e3-5cd3-48d5-b7da-007e17f06389","project":{"id":"b810b0b0-a954-403b-9795-f0c9d0c9cfe9","name":"PullRequestLiveTest","state":"unchanged","visibility":"unchanged","lastUpdateTime":"0001-01-01T00:00:00"}},"pullRequestId":45,"codeReviewId":45,"status":"active","createdBy":{"displayName":"Soujanya
+        Bestala (MINDTREE LIMITED)","url":"https://spsprodcin2.vssps.visualstudio.com/Aa9bae0de-049f-43b5-a1ff-18f8f805fbe8/_apis/Identities/22157d54-1821-6536-a446-928b06348385","_links":{"avatar":{"href":"https://dev.azure.com/v-anvashist0376/_apis/GraphProfile/MemberAvatars/aad.MjIxNTdkNTQtMTgyMS03NTM2LWE0NDYtOTI4YjA2MzQ4Mzg1"}},"id":"22157d54-1821-6536-a446-928b06348385","uniqueName":"v-sbestala@microsoft.com","imageUrl":"https://dev.azure.com/v-anvashist0376/_api/_common/identityImage?id=22157d54-1821-6536-a446-928b06348385","descriptor":"aad.MjIxNTdkNTQtMTgyMS03NTM2LWE0NDYtOTI4YjA2MzQ4Mzg1"},"creationDate":"2025-01-07T10:22:01.4975003Z","title":"Updated
+        README.md","description":"Updated README.md\n\n----\n#### AI description  (iteration
+        1)\n#### PR Classification\nDocumentation update\n\n#### PR Summary\nMinor
+        update to the `README.md` file to modify the installation process description.\n-
+        `README.md`: Changed \"Installation process\" to \"Installation process test\"
+        in the Getting Started section.","sourceRefName":"refs/heads/testbranch","targetRefName":"refs/heads/main","mergeStatus":"succeeded","isDraft":false,"mergeId":"3be5445b-6353-40d6-bd3a-8b9e1a3f6640","lastMergeSourceCommit":{"commitId":"4288ba2d6fed7c4cc3dac6a8e6dde6137644e669","url":"https://dev.azure.com/v-anvashist0376/b810b0b0-a954-403b-9795-f0c9d0c9cfe9/_apis/git/repositories/e55c17e3-5cd3-48d5-b7da-007e17f06389/commits/4288ba2d6fed7c4cc3dac6a8e6dde6137644e669"},"lastMergeTargetCommit":{"commitId":"16fe2ed3b187501cc3ad0e6081c878c77ba878c0","url":"https://dev.azure.com/v-anvashist0376/b810b0b0-a954-403b-9795-f0c9d0c9cfe9/_apis/git/repositories/e55c17e3-5cd3-48d5-b7da-007e17f06389/commits/16fe2ed3b187501cc3ad0e6081c878c77ba878c0"},"lastMergeCommit":{"commitId":"a0573dd98efea3440ed93be31f012073d9045e64","url":"https://dev.azure.com/v-anvashist0376/b810b0b0-a954-403b-9795-f0c9d0c9cfe9/_apis/git/repositories/e55c17e3-5cd3-48d5-b7da-007e17f06389/commits/a0573dd98efea3440ed93be31f012073d9045e64"},"reviewers":[],"url":"https://dev.azure.com/v-anvashist0376/b810b0b0-a954-403b-9795-f0c9d0c9cfe9/_apis/git/repositories/e55c17e3-5cd3-48d5-b7da-007e17f06389/pullRequests/45","supportsIterations":true}],"count":2}'
+    headers:
+      access-control-expose-headers:
+      - Request-Context
+      activityid:
+      - 30705092-6cd8-4e16-8460-a9cacbc29496
+      cache-control:
+      - no-cache
+      content-length:
+      - '5388'
+      content-type:
+      - application/json; charset=utf-8; api-version=5.0
+      date:
+      - Thu, 09 Jan 2025 12:07:02 GMT
+      expires:
+      - '-1'
+      p3p:
+      - CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV
+        STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+      pragma:
+      - no-cache
+      request-context:
+      - appId=cid-v1:0f8b2d32-fdff-4d39-87b8-548fb9450eb7
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-msedge-ref:
+      - 'Ref A: AF550E26C592466882794922CB5DDC3F Ref B: BN3EDGE0718 Ref C: 2025-01-09T12:07:01Z'
+      x-tfs-processid:
+      - 1e34daa6-cadf-416b-9a62-59f6904d4d9c
+      x-tfs-session:
+      - ad3174f2-944f-4bf0-ba38-c46df780a74e
+      x-vss-e2eid:
+      - 30705092-6cd8-4e16-8460-a9cacbc29496
+      x-vss-senderdeploymentid:
+      - ed30ce5c-9d0a-f73c-3580-4315c7f84d83
+      x-vss-userdata:
+      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+    status:
+      code: 200
+      message: OK
+version: 1
