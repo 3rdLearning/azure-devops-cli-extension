@@ -6,7 +6,7 @@
 from knack.log import get_logger
 from knack.util import CLIError
 from azext_devops.devops_sdk.v5_0.work_item_tracking.models import (JsonPatchOperation, Wiql, 
-                                                                    WorkItemRelation, WorkItemRelationType
+                                                                    WorkItemRelation, WorkItemRelationType)
 
 from azext_devops.dev.common.services import (get_work_item_tracking_client,
                                               resolve_instance)
